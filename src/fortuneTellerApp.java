@@ -57,13 +57,16 @@ public class fortuneTellerApp {
 				+ "If you don't know what ROYGBIV is type \"HELP\" to get a list of ROYGBIV colors");
 
 		String favColor = input.nextLine();
-		// use .contains method and .toLowerCase method to accept user input regardless of Case.
-		
+		// use .contains method and .toLowerCase method to accept user input regardless
+		// of Case.
+
 		if (favColor.toLowerCase().contains("help")) {
 
 			System.out.println(
 					"RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET \n" + "Select one of the colors listed.");
 		}
+		
+		input.nextLine();
 
 		int siblings = 0;
 		boolean isNumberOfSiblings;
@@ -150,7 +153,7 @@ public class fortuneTellerApp {
 			System.out.println("and travel by walking!");
 
 		}
-		
+
 		input.close();
 
 	}
